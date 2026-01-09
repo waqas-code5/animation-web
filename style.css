@@ -17,6 +17,7 @@
     color:  yellow;
     font-weight: bold;
     animation: assigment 2s infinite;
+    animation-delay: 1s;
     font-size: 30px;
     padding: 8px 12px;
     border-radius: 50px;
@@ -27,6 +28,7 @@ ul{
     list-style: none;
     gap: 10px;
     animation: assigment 2s infinite;
+    animation-delay: 1s;
     font-size: 20px;
 }
 li{
@@ -45,7 +47,8 @@ ul,li,a{
 .fotter{
     text-align: center;
     margin-top: 200px;
-    animation: assigment 2s infinite ;
+    animation: assigment 2s infinite  linear;
+   animation-delay: 1s;
     color: white;
 }
 .fotter,h1{
@@ -62,9 +65,9 @@ button{
         transform: translateY(0px);
     }
     50%{
-         transform: translateY(25px);
+         transform: translateY(25px); rotate: (180deg);
     }
     100%{
-          transform: translateY(0px);
+          transform: translateY(0px); rotate: (360deg);
     }
 }
